@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Redux Book Store
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+This project uses react components and redux store to build a book store.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Live Demo](#live-demo)
+- [Prerequisite](#prerequisite)
+- [How to use](#how-to-use)
+- [How to run tests](#how-to-run-tests)
+- [Authors](#authors)
+- [Contributing](#contributing)
+- [Show your support](#show-your-support)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- [Node.js](https://nodejs.org/en/)
+- [React.js](https://reactjs.org/)
+- [React-DOM](https://reactjs.org/docs/react-dom.html)
+- [Create-React-App](https://github.com/facebook/create-react-app)
+- [Redux](https://redux.js.org/)
+- [npm](https://www.npmjs.com/)
+- [CSS]()
+- [ES6]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `npm run build`
+[Live Demo Link](https://reduxbookstore.herokuapp.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisite
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node](https://nodejs.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to use
 
-### `npm run eject`
+### Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Open a command line and navigate to a directory you want to locally host the project.
+- Run `git clone git@github.com:bini-i/Redux-Book-Store.git` to clone the project to your computer.
+- Run `npm install` to install all dependencies.
+- Run `npm start` to locally start and serve the react application.
+- Navigate to `localhost:3000` in your browser to open the applcation.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to run tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Open a command line
+- Run ` npm install` to install all dependencies needed for testing.
+- Exectue `npm test` to run the tests
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Authors
 
-## Learn More
+👤 **Binyam Hailemeskel**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@bini-i](https://github.com/bini-i)
+- Twitter: [@binyamshewa](https://twitter.com/binyamshewa)
+- LinkedIn: [binyam hailemeskel](https://www.linkedin.com/in/bini-i/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is [MIT](./LICENSE) licensed.
 
-### Advanced Configuration
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React tutorial](https://reactjs.org/tutorial/tutorial.html)
+- [The odin project](https://theodinproject.com)
+- [freeCodeCamp](https://www.freecodecamp.org/learn/)
+- [Microverse](https://www.microverse.org/)
+- [MDN Web docs](https://developer.mozilla.org/)
