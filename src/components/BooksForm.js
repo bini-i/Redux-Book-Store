@@ -2,6 +2,7 @@ import { useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import {mapDispatchToProps} from '../reducers'
+import './styles.css'
 
 const BooksForm = ({addNewBook}) => {
     const [title, setTitle] = useState('');
@@ -34,10 +35,10 @@ const BooksForm = ({addNewBook}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} style={{display: 'flex', justifyContent: 'center'}}>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
+        <form onSubmit={handleSubmit} className='form'>
+            <div className='input-wrap'>   
                 <input onChange={handleChange} placeholder="book name" type="text" id="title" value={title}/>
-                <span style={{fontSize: '10px', color: 'red'}}>{bookTitleError}</span>
+                <span className='input-error'>{bookTitleError}</span>
             </div>
             <select onChange={handleChange} id="category" value={category}>
                 <option disabled value="">--Please choose a category--</option>
