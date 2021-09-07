@@ -34,16 +34,16 @@ const BooksForm = ({addNewBook}) => {
     }
 
     return (
-        <form style={{display: 'flex', justifyContent: 'center'}}>
+        <form onSubmit={handleSubmit} style={{display: 'flex', justifyContent: 'center'}}>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
                 <input onChange={handleChange} placeholder="book name" type="text" id="title" value={title}/>
                 <span style={{fontSize: '10px', color: 'red'}}>{bookTitleError}</span>
             </div>
             <select onChange={handleChange} id="category" value={category}>
-                <option defaultValue disabled value="">--Please choose a category--</option>
+                <option disabled value="">--Please choose a category--</option>
                 {categoryOptions}
             </select>
-            <input onClick={handleSubmit} type="submit" value="Add Book"/>
+            <input type="submit" value="Add Book"/>
         </form>
     )
 }
