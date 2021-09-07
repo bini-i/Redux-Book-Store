@@ -7,6 +7,7 @@ const BooksList = ({books}) => {
         const booksRow = books.map((book)=>
             <Book key={book.id} id={book.id} title={book.title} category={book.category}/>
         )
+
         return (
             <table>
             <thead>
