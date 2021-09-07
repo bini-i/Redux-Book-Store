@@ -10,11 +10,11 @@ export const mapStateToProps = (state) => ({
         books: state.books
     })
 export const mapDispatchToProps = (dispatch) => ({
-        addNewBook: ()=>{
-            dispatch(createBook())
+        addNewBook: (book)=>{
+            dispatch(createBook(book))
         },
-        removeBook: () => {
-            dispatch(removeBook())
+        removeBook: (book) => {
+            dispatch(removeBook(book))
         }
     })
     
