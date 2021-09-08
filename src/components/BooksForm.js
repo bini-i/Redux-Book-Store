@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import {mapDispatchToProps} from '../reducers'
 import './styles.css'
+import bookCategories from '../helpers/bookCategories'
 
 const BooksForm = ({addNewBook}) => {
     const [title, setTitle] = useState('');
     const [category, setCategory] = useState('');
     const [bookTitleError, setBookTitleError] = useState('');
 
-    const bookCategories =["Action", "Biography", "History", "Horror", "Kids", "Learning", "Sci-Fi"]
     const categoryOptions = bookCategories.map((category)=>
         <option key={category}>{category}</option>
     )
