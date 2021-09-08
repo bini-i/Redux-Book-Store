@@ -5,10 +5,10 @@ const booksReducer = (state = [], action)=> {
         case CREATE_BOOK:
             return [...state, action.book]
         case REMOVE_BOOK:
-            if(state.includes(action.book)){
-                state.filter((ele)=>ele!==action.book)
+            if(state.map((ele)=>ele.id).includes(action.book.id)){
+                return state.filter((ele)=>ele.id!==action.book.id)
             }
-            return []
+            return [...state]
         default:
             return state;
     }
