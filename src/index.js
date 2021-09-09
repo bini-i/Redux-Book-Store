@@ -8,8 +8,9 @@ import {rootReducer} from './reducers';
 import reportWebVitals from './reportWebVitals';
 
 const SampleBooks = [
-  {id: 1, title: 'bk title', category: 'History'},
-  {id: 2, title: 'bk title', category: 'History'}
+  {id: 1, title: 'The Hunger Games', category: 'Action'},
+  {id: 2, title: 'Dune', category: 'Science Fiction'},
+  {id: 3, title: 'Capital in the Twenty-First Century', category: 'Economy'}
 ]
 const store = createStore(rootReducer, {books: SampleBooks})
 
