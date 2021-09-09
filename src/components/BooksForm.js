@@ -35,17 +35,20 @@ const BooksForm = ({addNewBook}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className='form'>
-            <div className='input-wrap'>   
-                <input onChange={handleChange} placeholder="book name" type="text" id="title" value={title}/>
-                <span className='input-error'>{bookTitleError}</span>
-            </div>
-            <select onChange={handleChange} id="category" value={category}>
-                <option disabled value="">--Please choose a category--</option>
-                {categoryOptions}
-            </select>
-            <input type="submit" value="Add Book"/>
-        </form>
+        <>
+            <h2 className='book-form-head'>ADD NEW BOOK</h2>
+            <form onSubmit={handleSubmit} className='form'>
+                <div className='input-wrap'>   
+                    <input onChange={handleChange} placeholder="Book title" type="text" id="title" value={title}/>
+                    <span className='input-error'>{bookTitleError}</span>
+                </div>
+                <select className='category-opts' onChange={handleChange} id="category" value={category}>
+                    <option disabled value="">Category</option>
+                    {categoryOptions}
+                </select>
+                <input className='book-submit-btn' type="submit" value="Add Book"/>
+            </form>
+        </>
     )
 }
 
